@@ -37,15 +37,19 @@ class _MyAppState extends State<MyApp> {
           dataLoader: (locale, flavor) async {
             print('local load $locale and $flavor');
             if (flavor == IntlDelegate.defaultFlavorName) {
-              return await rootBundle.loadString('assets/arb/translations_$locale.arb');
+              return await rootBundle
+                  .loadString('assets/arb/translations_$locale.arb');
             }
-            return await rootBundle.loadString('assets/arb/translations_${flavor}_$locale.arb');
+            return await rootBundle
+                .loadString('assets/arb/translations_${flavor}_$locale.arb');
           },
           updateDataLoader: (locale, flavor) async {
             print('Remote load $locale and $flavor');
             if (locale == 'en' && flavor == 'flavor1') {
-              await Future.delayed(Duration(seconds: 10)); //simulate some slow network response
-              return await rootBundle.loadString('assets/arb/translations_remote_$locale.arb');
+              await Future.delayed(
+                  Duration(seconds: 10)); //simulate some slow network response
+              return await rootBundle
+                  .loadString('assets/arb/translations_remote_$locale.arb');
             }
             return null; // no update
           },
@@ -93,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ],
         ),

@@ -17,7 +17,8 @@ void main() async {
       return 'translations.arb';
     },
     //configCacheDuration: Duration(seconds: 30),
-    cacheFolder: path.join((await getTemporaryDirectory()).path, 'translations'),
+    cacheFolder:
+        path.join((await getTemporaryDirectory()).path, 'translations'),
   );
   runApp(MyApp());
 }
@@ -52,9 +53,11 @@ class _MyAppState extends State<MyApp> {
           dataLoader: (locale, flavor) async {
             print('local load $locale and $flavor for errors');
             if (flavor == IntlDelegate.defaultFlavorName) {
-              return await rootBundle.loadString('assets/arb/errors_$locale.arb');
+              return await rootBundle
+                  .loadString('assets/arb/errors_$locale.arb');
             }
-            return await rootBundle.loadString('assets/arb/errors_${flavor}_$locale.arb');
+            return await rootBundle
+                .loadString('assets/arb/errors_${flavor}_$locale.arb');
           },
           defaultFlavor: IntlDelegate.defaultFlavorName,
           overrideCurrentLocale: locales.last,
@@ -72,9 +75,11 @@ class _MyAppState extends State<MyApp> {
           dataLoader: (locale, flavor) async {
             print('local load $locale and $flavor');
             if (flavor == IntlDelegate.defaultFlavorName) {
-              return await rootBundle.loadString('assets/arb/translations_$locale.arb');
+              return await rootBundle
+                  .loadString('assets/arb/translations_$locale.arb');
             }
-            return await rootBundle.loadString('assets/arb/translations_${flavor}_$locale.arb');
+            return await rootBundle
+                .loadString('assets/arb/translations_${flavor}_$locale.arb');
           },
           /*
           //manual download of OTA ARB files if default constructor is used
@@ -133,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ],
         ),
