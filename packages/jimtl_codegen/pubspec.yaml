@@ -7,12 +7,14 @@ environment:
   sdk: ">=3.4.4 <4.0.0"
 
 dependencies:
-  analyzer: ">=5.0.0 <8.0.0"
+  analyzer: ">=2.1.0 <8.0.0"
   build: ">=2.0.1 <3.0.0"
   path: ">=1.8.0 <2.0.0"
   source_gen: ">=1.0.0 <2.0.0"
   intl: ">=0.17.0 <1.0.0"
-  intl_generator: ">=0.4.1 <1.0.0"
+  intl_generator:
+    git:
+      url: git@github.com:Elr03/intl_generator.git
   #path: ../../../../StudioProjects/intl_translation
   jimtl: ">=0.0.1 <1.0.0"
   #path: ../jimtl

@@ -8,7 +8,9 @@ environment:
 
 dependencies:
   intl: ">=0.17.0 <1.0.0"
-  intl_generator: ">=0.4.1 <1.0.0"
+  intl_generator:
+    git:
+      url: git@github.com:Elr03/intl_generator.git
 
 dev_dependencies:
   test:
