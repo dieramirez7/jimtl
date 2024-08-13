@@ -294,10 +294,11 @@ packages:
   jimtl:
     dependency: transitive
     description:
-      name: jimtl
-      sha256: e355bb05d0e8d76ba85a80206a8939af580755cff6be3a0144f821b80e8ebf9b
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/jimtl"
+      ref: HEAD
+      resolved-ref: a84264d54e3ff52bafec6ab0be2119b2bdc171c6
+      url: "git@github.com:Elr03/jimtl.git"
+    source: git
     version: "0.0.7"
   jimtl_codegen:
     dependency: "direct dev"
