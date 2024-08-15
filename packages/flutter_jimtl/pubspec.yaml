@@ -13,7 +13,7 @@ dependencies:
   intl: ">=0.17.0 <1.0.0"
   jimtl:
     git:
-      url: git@github.com:Elr03/jimtl.git
+      url: https://github.com/Elr03/jimtl.git
       path: packages/jimtl
 
 dev_dependencies:

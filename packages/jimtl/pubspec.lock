@@ -147,8 +147,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b771f5f40c87b3145d2ba8f5db69ba6b6455dcb3
-      url: "git@github.com:Elr03/intl_generator.git"
+      resolved-ref: bcc673b7d341280aa906bd37509c92a597c007eb
+      url: "https://github.com/Elr03/intl_generator.git"
     source: git
     version: "0.4.1"
   io:

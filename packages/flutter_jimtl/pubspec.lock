@@ -180,8 +180,8 @@ packages:
     description:
       path: "packages/jimtl"
       ref: HEAD
-      resolved-ref: "113f820ce01c0accb2b76ab273519487276f7890"
-      url: "git@github.com:Elr03/jimtl.git"
+      resolved-ref: b6958dbab21b763093e30a7415ebe712e82365d8
+      url: "https://github.com/Elr03/jimtl.git"
     source: git
     version: "0.0.7"
   js:
